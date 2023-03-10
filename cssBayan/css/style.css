@@ -1,0 +1,42 @@
+.accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-info {
+    display: none;
+    transition: 1.2s all linear;
+}
+
+/* .accordion-info:hover {
+    display: block;
+} */
+
+.accordion-item {
+    transition: 1.2s all linear;
+}
+
+
+.accordion-item:hover .accordion-info{
+    display: block;
+}
+
+input[type="radio"]:checked ~ .accordion-info{
+    display: block;
+}
+
+.accordion:hover .color {
+    color: red;
+}
+
+input[type="radio"] {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+.accordion-line{
+    border: 1px solid red;
+}
+
+
